@@ -16,16 +16,18 @@ You do not have to deal with the case, when there are only underage users in the
 */
 
 function averageAgeOfAdults(users) {
-  let ageOfAdults = [];
+  let ageOfAdults = 0
+  let averageAgeOfAdults = 0
+  let aboveAge = 0
   for (let index = 0; index < users.length; index++) {
     const person = users[index];
-    if (person.age > 17) {
+    if (person.age >= 18) {
       ageOfAdults += person.age
+      aboveAge++
     }
-  }
-  let averageAgeOfAdults = ageOfAdults/ageOfAdults.length
+
+  averageAgeOfAdults = ageOfAdults/aboveAge
   return averageAgeOfAdults;
 }
-console.log(averageAgeOfAdults(users));
-
+}
 module.exports = averageAgeOfAdults;

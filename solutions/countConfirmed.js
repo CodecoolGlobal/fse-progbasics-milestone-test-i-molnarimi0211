@@ -24,6 +24,5 @@ function countConfirmed(users) {
     }
     return confirmedNumber
 }
-console.log(countConfirmed(users));
 
 module.exports = countConfirmed;

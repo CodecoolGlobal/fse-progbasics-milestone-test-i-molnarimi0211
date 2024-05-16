@@ -21,6 +21,5 @@ function findAbacus(array) {
     }
     return null
 }
-console.log(findAbacus(array));
 
 module.exports = findAbacus;
